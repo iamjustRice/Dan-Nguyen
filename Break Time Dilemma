@@ -1,0 +1,9 @@
+/* File: drivedistance.ch 
+   Drive a robot as a two-wheel robot for a given distance. */
+#include <linkbot.h>
+CLinkbotI robot;
+int radius = 2;
+int trackwith = 3.69;
+
+robot.setSpeed(6,radius);
+robot.turnRight(360,radius,trackwith);
