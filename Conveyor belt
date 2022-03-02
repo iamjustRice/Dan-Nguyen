@@ -1,0 +1,34 @@
+/* File: drivedistance.ch 
+   Drive a robot as a two-wheel robot for a given distance. */
+#include <linkbot.h>
+CLinkbotI justbot;
+CLinkbotI bob;
+int radius = 2;
+double trackwith = 3.69;
+int x1;
+int y1;
+int x2;
+int y2;
+int E;
+
+printf("where is the bot?(x1 also add a negative (-23 )");
+scanf("i", &x1);
+justbot.driveDistance(x1,radius);
+justbot.turnRight(90,radius,trackwith);
+printf("where is the bot?(y1 also add a negative, 0 for don't move (-18) ");
+scanf("i", &y1);
+justbot.driveDistance(y1,radius);
+justbot.turnRight(90,radius,trackwith);
+printf("How far?(E also add a negative, 0 for don't move (-18) ");
+scanf("i", &E);
+justbot.driveDistance(E,radius);
+
+
+printf("where is the bot?(x2 also add a negative (-23) ");
+scanf("i", &x2);
+bob.driveDistance(x2,radius);
+bob.turnLeft(90,radius,trackwith);
+printf("where is the bot?(y2also add a negative, 0 for don't move(-17) ");
+scanf("i", &y2);
+bob.driveDistance(y2,radius);
+
