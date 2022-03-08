@@ -1,3 +1,5 @@
+Us student will have to try and creat a Choose Your Own Adventure, as a finial coding project for this term. There are many constraints
+and requirenment that is needed to complete.
 
 //variables
 int introChoice, middleChoice1, roadmap;
