@@ -1,0 +1,177 @@
+
+//variables
+int introChoice, middleChoice1, roadmap;
+//Intro
+void intro(){
+    printf("You first launch your favorite game you have been waiting for for almost a year. \nYou wanted to become the top player but don’t know where to start or help much to put your time into it. \nYou are not sure how much money you should use in the game. \nUnsure if using money would even help you with getting better. \nNonetheless you won’t get anywhere just sitting there overthinking it.");
+    printf("\n\nWould you like to see your options, 1: yes, 2: no\n\n");
+    scanf("%i", &roadmap);
+    while (roadmap !=1  && roadmap != 2){
+        printf ("not option pick 1 or 2\n");
+        scanf("%i", &roadmap);
+    }
+    if (roadmap == 1){
+        printf("You have three options to begin your journey to become the best player. \nOption 1: p2w (pay to win, spend a lot of money aka a whale). \nOption 2: a fish (Low spender). \nOption 3: f2p (free to play, aka spend no money).\n\n");
+        printf("Make your choice to determain you future: 1, 2, or 3\n");
+        scanf("%i", &introChoice);
+    }
+    if (roadmap == 2){
+            printf("Guess your choice to determain you future: 1, 2, or 3\n");
+            scanf("%i", &introChoice);
+
+    }
+    while(introChoice != 1 && introChoice != 2 && introChoice != 3){
+        printf("Hey, take it serious your future is in jeopardy here\nType in '1' '2' or '3'\n");
+        scanf("%i", &introChoice);
+    }
+}
+//Middle 1
+void middle1(){
+    printf("you chose to be a p2w (pay to win)\n");
+    printf("\n\nWould you like to see your options, 1: yes, 2: no\n\n");
+    scanf("%i", &roadmap);
+    while (roadmap !=1  && roadmap != 2){
+        printf ("not option pick 1 or 2\n");
+        scanf("%i", &roadmap);
+    }
+    if (roadmap == 1){
+         printf("This is your next step you need to make a choice 1\nChoice 1: You seem to make good money from your fan and support, you go all out with your spending\n and hope of making enough fans to have a consistent income to play for your everyday needs and game. \nChoice 2: You decided to keep spending the same amount of money, and make no changes. \nChoice 3: You went outside and saw the condition of the world, the homeless, \nand the lack of food for the children and you decided to put your money into donations.\n\n");
+        printf("Make your choice to determain you future: 1, 2, or 3\n");
+        scanf("%i", &introChoice);
+    }
+    if (roadmap == 2){
+            printf("Guess your choice to determain you future: 1, 2, or 3\n");
+            scanf("%i", &introChoice);
+    }
+    scanf("%i", &middleChoice1);
+    while(middleChoice1 != 1 && middleChoice1 != 2 && middleChoice1 != 3){
+        printf("Hey, take it serious your future is in jeopardy here\nType in '1' '2' or '3'\n");
+        scanf("%i", &middleChoice1);
+    }
+}
+//Middle 2
+void middle2(){
+    printf("you chose to be a fish (a low spender)\n");
+    printf("you now need to pick your next options, remember your money is limited\n");
+    printf("\n\nWould you like to see your options, 1: yes, 2: no\n\n");
+    scanf("%i", &roadmap);
+    while (roadmap !=1  && roadmap != 2){
+        printf ("not option pick 1 or 2\n");
+        scanf("%i", &roadmap);
+    }
+    if (roadmap == 1){
+        printf("three options for you to chose, \nOption 1: you can spend less money, and have a control on your spending. \nOption 2: you can lgo all out(Spend a lot of money). \nOption 3: you can give up\n\n");
+        printf("Make your choice to determain you future: 1, 2, or 3\n");
+        scanf("%i", &introChoice);
+    }
+    if (roadmap == 2){
+            printf("Guess your choice to determain you future: 1, 2, or 3\n");
+            scanf("%i", &introChoice);
+    }
+    scanf("%i", &middleChoice1);
+    while(middleChoice1 != 1 && middleChoice1 != 2 && middleChoice1 != 3){
+        printf("Hey, take it serious your future is in jeopardy here\nType in '1' '2' or '3'\n");
+        scanf("%i", &middleChoice1);
+    }
+}
+//Middle 3
+void middle3(){
+    printf("So you pick to e f2p, good choice now you dont have to waist your money, hopefully you have a great time");
+    printf("\n\nWould you like to see your options, 1: yes, 2: no\n\n");
+    scanf("%i", &roadmap);
+    while (roadmap !=1  && roadmap != 2){
+        printf ("not option pick 1 or 2\n");
+        scanf("%i", &roadmap);
+    }
+    if (roadmap == 1){
+        printf("What would you want to so as a f2p. \nOption 1: you can work alone to get to your desire goals. \nOption 2: You can collaborate with other people. \nOption 3: You can cheat your way to your dream goals.\n\n");
+        printf("Make your choice to determain you future: 1, 2, or 3\n");
+        scanf("%i", &introChoice);
+    }
+    if (roadmap == 2){
+            printf("Guess your choice to determain you future: 1, 2, or 3\n");
+            scanf("%i", &introChoice);
+    }
+    scanf("%i", &middleChoice1);
+    while(middleChoice1 != 1 && middleChoice1 != 2 && middleChoice1 != 3){
+        printf("Hey, take it serious your future is in jeopardy here\nType in '1' '2' or '3'\n");
+        scanf("%i", &middleChoice1);
+    }
+    
+}
+//Ending (9)
+void end1(){
+    printf("You seem to be doing good and you want more money. \nYou went out of your way to make sure your content is the best and would do anything to get your viewer. \nBut the worst thing happens when your viewer sees the visible change in your personality. \nThey notice that you were not the person they are use too. You soo lost many viewer, \nand soon your back in square one. Don’t be too greedy, \nbetter luck next time try again.");
+    exit (1);
+}
+void end2(){
+    printf(" You like being yourself and know you have reached your limit. You \nknow when to stop and know how to make a a good/correct decision every time. You like giving advice to you fan and other low player with the game and are nice to everyone. That's what your \nfans like about you, you don’t try to get people to like you by doing what they want. \nYou have a good fan community who are trustworthy and soon become famous.");
+    exit (1);
+}
+void end3(){
+    printf("You have now stopped spending money on useless games and made more community content. \nYou are now outside more ten ever, you have a way to be happy that does not need you \nto play games all day. You soon find yourself becoming famous from the content you and and the many donation you make. You soon found yourself a girl/boyfriend that are must better to spent time with than playing games. You’re free, be free.");
+    exit (1);
+}
+void end4(){
+    printf("You have just become an adult and don’t know how to make money or you're not making \nalot of money. Even then you somehow spend some spare dollars to help with your game carefully not to be addicted. Everyone else seen to be nice you you and been giveing you tips to help you. \nYour journey might be rough at first but hopefully, the road will smooth out a bit as you move on. \nGood Luck :)");
+    exit (1);
+}
+void end5(){
+    printf("Hey wait, that’s not how you are supposed to play the game. \nI thought you were broke, you can't jsut give yourself money. \nWhere are you going to get money to spend. We can lead you to your ending from your choice, but we can't change change you option you have pick to be a fish, and you stay a fish. Sorry we don't work miracle :/");
+    exit (1);
+}
+void end6(){
+    printf("You have gotten tired of all the spending and you realize it’s really not \nhelping your the position you are in. You feel like it has now become an \nirresistible addition that has done nothing but drags you down, and you \nstop playing and spending money…or you though. You see an addition isn't something \nyou can just leave behind or get rid of, sorry it’s the harsh truth and I don’t make the rule. So you \nkeep spending and spending. Nice try, maybe you can really stop if you try harder. \nAlso, make sure you have enough food.");
+    exit (1);
+}
+void end7(){
+    printf("Your start is so slow and tedious, but being free to play isn't as hard as other people make it to be. \nAlthough you have to spend much more time than other people. You have many options, \nyou can collaborate with other people to help you grow faster, but you decided to try and be \ncool and made it to the top alone. You know there is a limit of how far you can get without any help. \nIn the end you couldn't fall far and soon gave up on the game. Try a better option next time.");
+    exit (1);
+}
+void end8(){
+    printf("You were bad at the game but, after a mysterious person who watched your stream, felt pity for you. \nSo they offered to help you and you got much much better. Later you found out that the \nperson who was helping you was the current number 1 on the leaderboard in the game. \nYou two became close friends, and did some collaboration and you soon grew famous, surpassing your friend. \nCongrats on reaching your dream, at least your friend doesn't mind you passing him.");
+    exit (1);
+}
+void end9(){
+    printf("You want to reach your dream but you are not really putting time into it, so you decided to give your \naccount to another person to play it for you and they soon reach to be number one on the leaderboard. \nYou did that and claimed that all the work was yours and they stole the account. \nYou somehow got the account back, too bad the game dev did this and took back the account and returned it back to the rightful owner. \nThey then proceeded to ban you from ever playing the game again, and even if you somehow got back they’ll track your account and ban it. \nMoral of the story is don't play dirty or bypass the system. Try again.");
+    exit (1);
+}
+int main(){  //main program to run (logic)
+    intro(5, "bob");
+    if(1 == introChoice){
+        middle1();
+        if(middleChoice1 == 1){
+            end1();
+        }
+        if(middleChoice1 == 2){
+            end2();
+        }
+        if(middleChoice1 == 3){
+            end3();
+        }
+    }
+    if(2 == introChoice){
+        middle2();
+        if(middleChoice1 == 1){
+            end4();
+        }
+        if(middleChoice1 == 2){
+            end5();
+        }
+        if(middleChoice1 == 3){
+            end6();
+        }
+    }
+    if(3 == introChoice){
+        middle2();
+        if(middleChoice1 == 1){
+            end7();
+        }
+        if(middleChoice1 == 2){
+            end8();
+        }
+        if(middleChoice1 == 3){
+            end9();
+        }
+    }
+}
