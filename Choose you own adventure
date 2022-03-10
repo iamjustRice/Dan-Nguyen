@@ -1,6 +1,8 @@
 Us student will have to try and creat a Choose Your Own Adventure, as a finial coding project for this term. There are many constraints
 and requirenment that is needed to complete.
 
+
+
 //variables
 int introChoice, middleChoice1, roadmap;
 //Intro
@@ -14,6 +16,8 @@ void intro(){
     }
     if (roadmap == 1){
         printf("You have three options to begin your journey to become the best player. \nOption 1: p2w (pay to win, spend a lot of money aka a whale). \nOption 2: a fish (Low spender). \nOption 3: f2p (free to play, aka spend no money).\n\n");
+        printf("If you choose to be a f2w, 2/3 of the ending you get will be a neutral, and one bad ending.\nIf you choose to be a fish you'll have one neutral ending and 2 bad ending.\nAnd if you choose to be an f2p you get 1 good ending, and 2 bad ending.\n Choose wisely.\n\n");
+        printf("BTW if you pick p2w, for your next choice you'll make 1: Bad Ending 2: Good Ending 3: Neutral Ending. \nFor if you pick a fish, you'll get 3 choice again if you pick 1: Neutral Ending 2: Bad Ending 3: Bad Eanding. \nAnd if you lick f2p option 1: Bad Ending 2: Good Ending 3: Bad Ending.\n\n");
         printf("Make your choice to determain you future: 1, 2, or 3\n");
         scanf("%i", &introChoice);
     }
@@ -38,6 +42,8 @@ void middle1(){
     }
     if (roadmap == 1){
          printf("This is your next step you need to make a choice 1\nChoice 1: You seem to make good money from your fan and support, you go all out with your spending\n and hope of making enough fans to have a consistent income to play for your everyday needs and game. \nChoice 2: You decided to keep spending the same amount of money, and make no changes. \nChoice 3: You went outside and saw the condition of the world, the homeless, \nand the lack of food for the children and you decided to put your money into donations.\n\n");
+        printf("If you choose to be a f2w(YOUR'RE ON THIS PATH RIGHT NOW), 2/3 of the ending you get will be a neutral, and one bad ending.\nIf you choose to be a fish you'll have one neutral ending and 2 bad ending.\nAnd if you choose to be an f2p you get 1 good ending, and 2 bad ending.\n Choose wisely.\n\n");
+        printf("BTW if you pick p2w, for your next choice you'll make 1: Bad Ending 2: Good Ending 3: Neutral Ending. \nFor if you pick a fish, you'll get 3 choice again if you pick 1: Neutral Ending 2: Bad Ending 3: Bad Eanding. \nAnd if you lick f2p option 1: Bad Ending 2: Good Ending 3: Bad Ending.\n\n");
         printf("Make your choice to determain you future: 1, 2, or 3\n");
         scanf("%i", &introChoice);
     }
@@ -63,6 +69,9 @@ void middle2(){
     }
     if (roadmap == 1){
         printf("three options for you to chose, \nOption 1: you can spend less money, and have a control on your spending. \nOption 2: you can lgo all out(Spend a lot of money). \nOption 3: you can give up\n\n");
+        printf("If you choose to be a f2w, 2/3 of the ending you get will be a neutral, and one bad ending.\nIf you choose to be a fish(YOUR'RE ON THIS PATH RIGHT NOW) you'll have one neutral ending and 2 bad ending.\nAnd if you choose to be an f2p you get 1 good ending, and 2 bad ending.\n Choose wisely.\n\n");
+        printf("BTW if you pick p2w, for your next choice you'll make 1: Bad Ending 2: Good Ending 3: Neutral Ending. \nFor if you pick a fish, you'll get 3 choice again if you pick 1: Neutral Ending 2: Bad Ending 3: Bad Eanding. \nAnd if you lick f2p option 1: Bad Ending 2: Good Ending 3: Bad Ending.\n\n");
+
         printf("Make your choice to determain you future: 1, 2, or 3\n");
         scanf("%i", &introChoice);
     }
@@ -87,6 +96,9 @@ void middle3(){
     }
     if (roadmap == 1){
         printf("What would you want to so as a f2p. \nOption 1: you can work alone to get to your desire goals. \nOption 2: You can collaborate with other people. \nOption 3: You can cheat your way to your dream goals.\n\n");
+        printf("If you choose to be a f2w, 2/3 of the ending you get will be a neutral, and one bad ending.\nIf you choose to be a fish you'll have one neutral ending and 2 bad ending.\nAnd if you choose to be an f2p(YOUR'RE ON THIS PATH RIGHT NOW) you get 1 good ending, and 2 bad ending.\n Choose wisely.\n\n");
+        printf("BTW if you pick p2w, for your next choice you'll make 1: Bad Ending 2: Good Ending 3: Neutral Ending. \nFor if you pick a fish, you'll get 3 choice again if you pick 1: Neutral Ending 2: Bad Ending 3: Bad Eanding. \nAnd if you lick f2p option 1: Bad Ending 2: Good Ending 3: Bad Ending.\n\n");
+
         printf("Make your choice to determain you future: 1, 2, or 3\n");
         scanf("%i", &introChoice);
     }
@@ -101,7 +113,6 @@ void middle3(){
     }
     
 }
-//Ending (9)
 void end1(){
     printf("You seem to be doing good and you want more money. \nYou went out of your way to make sure your content is the best and would do anything to get your viewer. \nBut the worst thing happens when your viewer sees the visible change in your personality. \nThey notice that you were not the person they are use too. You soo lost many viewer, \nand soon your back in square one. Don’t be too greedy, \nbetter luck next time try again.");
     exit (1);
@@ -127,7 +138,7 @@ void end6(){
     exit (1);
 }
 void end7(){
-    printf("Your start is so slow and tedious, but being free to play isn't as hard as other people make it to be. \nAlthough you have to spend much more time than other people. You have many options, \nyou can collaborate with other people to help you grow faster, but you decided to try and be \ncool and made it to the top alone. You know there is a limit of how far you can get without any help. \nIn the end you couldn't fall far and soon gave up on the game. Try a better option next time.");
+    printf("Your start is so slow and tedious, but being free to play isn't as hard as other people make it to be. \nAlthough you have to spend much more time than other people. You have many options, \nyou can collaborate with other people to help you grow faster, but you decided to try and be \ncool and made it to the top alone. You know there is a limit of how far you can get without any help. \nIn the end you couldn't get far and soon gave up on the game. Try a better option next time.");
     exit (1);
 }
 void end8(){
